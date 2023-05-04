@@ -15,6 +15,53 @@ body {
 .login .container {
     height: 100%;
     align-content: center;
-    top:30px;
 }
 
+.home nav{
+    width: 100%;
+}
+
+.home aside{
+    height: 86vh;
+}
+
+.yossi{
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.gps {
+    width: 25px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+.sensors {
+    width: 30px;
+    margin-left: 75px;
+    margin-top: -30px;
+}
+
+.wifi{
+    width: 30px;
+    margin-left: 135px;
+    margin-top: -25px;
+}
+
+.reception{
+    width: 30px;
+    margin-left: 188px;
+    margin-top: -27px;   
+}
+
+.topLine{
+    margin-top: -15px;
+}
+
+.homeLogos{
+    width: 25px;
+    height: 25px;
+    padding-bottom: 3px;
+}
