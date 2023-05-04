@@ -64,42 +64,42 @@
     height: 86vh;
 }
 
-.yossi{
+.home .yossi{
     border-radius: 100px;
     width: 40px;
     height: 40px;
     margin-right: 20px;
 }
 
-.gps {
+.home .gps {
     width: 25px;
     height: 30px;
     margin-left: 20px;
 }
 
-.sensors {
+.home .sensors {
     width: 30px;
     margin-left: 75px;
     margin-top: -30px;
 }
 
-.wifi{
+.home .wifi{
     width: 30px;
     margin-left: 135px;
     margin-top: -25px;
 }
 
-.reception{
+.home .reception{
     width: 30px;
     margin-left: 188px;
     margin-top: -27px;   
 }
 
-.topLine{
+.home .topLine{
     margin-top: -15px;
 }
 
-.homeLogos{
+.home .homeLogos{
     width: 25px;
     height: 25px;
     padding-bottom: 3px;
