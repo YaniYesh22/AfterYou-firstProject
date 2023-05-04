@@ -56,51 +56,91 @@
     border-top-right-radius: 0;
 }
 
-.home nav{
+nav {
     width: 100%;
 }
 
-.home aside{
-    height: 86vh;
+ aside{
+    height: 100vh;
 }
 
-.home .yossi{
+.yossi{
     border-radius: 100px;
     width: 40px;
     height: 40px;
     margin-right: 20px;
 }
 
-.home .gps {
+.gps {
     width: 25px;
     height: 30px;
     margin-left: 20px;
 }
 
-.home .sensors {
+.sensors {
     width: 30px;
     margin-left: 75px;
     margin-top: -30px;
 }
 
-.home .wifi{
+.wifi{
     width: 30px;
     margin-left: 135px;
     margin-top: -25px;
 }
 
-.home .reception{
+.reception{
     width: 30px;
     margin-left: 188px;
     margin-top: -27px;   
 }
 
-.home .topLine{
+.topLine{
     margin-top: -15px;
 }
 
-.home .homeLogos{
+.homeLogos{
     width: 25px;
     height: 25px;
     padding-bottom: 3px;
+}
+
+.form h1{
+    position: absolute;
+        left: 292px;
+        top: 130px;
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 31px;
+        line-height: 38px;
+        display: flex;
+        align-items: center;
+}
+.form h4{
+    font-family: 'Roboto' sans-serif;
+}
+
+.breadcrumbNav{
+    position: absolute;
+left: 292px;
+top: 100px;
+}
+
+.missionDetails{
+        position: absolute;
+            left: 292px;
+            top: 175px;
+}
+
+
+
+.form .googleMap iframe{
+    position: absolute;
+    width: 400px;
+    height: 500px;
+left: 1800px;
+top: 246px;
+
+border-radius: 31px;
 }
