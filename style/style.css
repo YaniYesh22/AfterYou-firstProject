@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login html,
+body {
+    background-color: rgb(219, 218, 218);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+.login .container {
+    height: 100%;
+    align-content: center;
+}
+
