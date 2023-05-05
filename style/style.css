@@ -1,156 +1,319 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.login html,body{
-    
-    height: 100%;
+.login html,
+body {
+  height: 100%;
 }
 
 .login body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 250px;
-    background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 250px;
+  background-color: #f5f5f5;
 }
 
 .login .container {
-    height: 100%;
-    align-content: center;
+  height: 100%;
+  align-content: center;
 }
 
-.login .title h1{
-    font-family: 'Roboto' 'sans-serif';
-        font-style: normal;
-        padding-bottom: 50px;
-        font-weight: 900;
-        font-size: 64px;
-        line-height: 20px;
+.login .title h1 {
+  font-family: "Roboto" "sans-serif";
+  font-style: normal;
+  padding-bottom: 50px;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 20px;
 }
 
-.login .h3{
-        font-family: 'Roboto', 'sens-sarif';
-                font-size: 30px;
-                font-weight: 300;
+.login .h3 {
+  font-family: "Roboto", "sens-sarif";
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .login .form-signin {
-    max-width: 450px;
-    padding: 15px;
+  max-width: 450px;
+  padding: 15px;
 }
 
 .login .form-signin .form-floating:focus-within {
-    z-index: 2;
+  z-index: 2;
 }
 .login .form-signin input[type="password"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .login .form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
-nav {
-    width: 100%;
+.home nav {
+  width: 100%;
 }
 
- aside{
-    height: 100vh;
+.home aside {
+  height: 87vh;
 }
 
-.yossi{
-    border-radius: 100px;
-    width: 40px;
-    height: 40px;
-    margin-right: 20px;
+.home .gps {
+  width: 25px;
+  height: 30px;
+  margin-left: 20px;
 }
 
-.gps , .sensors , .wifi , .reception{
-    width: 30px;
+.home .sensors {
+  width: 30px;
+  margin-left: 75px;
+  margin-top: -30px;
 }
 
-.form .sens{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.form .sens img{
-    margin-right: 40px;
-}
-.topLine{
-    margin-top: 0px;
+.home .wifi {
+  width: 30px;
+  margin-left: 135px;
+  margin-top: -25px;
 }
 
-.homeLogos{
-    width: 25px;
-    height: 25px;
-    padding-bottom: 3px;
+.home .reception {
+  width: 30px;
+  margin-left: 188px;
+  margin-top: -27px;
 }
 
-.form h1{
+.home .topLine {
+  margin-top: -15px;
+}
+
+.home .homeLogos {
+  width: 25px;
+  height: 25px;
+  padding-bottom: 3px;
+}
+
+.home main {
+  display: flex;
+  width: 1080px;
+  margin-left: 295px;
+  margin-top: -650px;
+}
+
+.home h2 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.home .CreateNewMission {
+  position: relative;
+  top: 145px;
+  left: -105px;
+  width: 837px;
+  height: 180px;
+}
+
+.home .cnmImage {
+  position: relative;
+  top: -80px;
+}
+
+.home .CreateNewMission h2 {
+  position: absolute;
+  left: 40px;
+  top: -62px;
+}
+
+.home .CreateNewMission h5 {
+  position: absolute;
+  left: 60px;
+  top: 30px;
+}
+
+.home .completedButton {
+  position: relative;
+  padding-top: 110px;
+}
+
+.home .FillMissionDetails {
+  position: relative;
+  top: 150px;
+  left: -50px;
+  width: 650px;
+  height: 180px;
+}
+
+.home .fmdImage {
+  position: relative;
+  top: -30px;
+}
+
+.home .FillMissionDetails h2 {
+  position: absolute;
+  left: 40px;
+  width: 261px;
+  top: -65px;
+}
+
+.home .FillMissionDetails h5 {
+  position: absolute;
+  left: 62px;
+  width: 250px;
+  top: 20px;
+}
+
+.home .PressToStart {
+  position: relative;
+  top: 105px;
+}
+
+.home .SystemSelfTest {
+  position: relative;
+  top: 150px;
+  left: 50px;
+  width: 650px;
+  height: 180px;
+}
+
+.home .sstImage{
     position: absolute;
-        left: 292px;
-        top: 130px;
-        font-family: 'Roboto' sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 31px;
-        line-height: 38px;
-        display: flex;
-        align-items: center;
-}
-.form h4{
-    font-family: 'Roboto' sans-serif;
+    top: -33px;
 }
 
-.breadcrumbNav{
+.home .SystemSelfTest h2{
     position: absolute;
-left: 292px;
-top: 100px;
+    left: 40px;
+    width: 235px;
+    top: -70px;
 }
 
-.missionDetails{
-        position: absolute;
-            left: 292px;
-            top: 175px;
-}
-
-
-
-.form .googleMap iframe{
+.home .SystemSelfTest h5{
     position: absolute;
-    width: 400px;
-    height: 500px;
-left: 1800px;
-top: 246px;
-border-radius: 31px;
+    left: 63px;
+    top: 20px;
+    width: 250px;
 }
 
-.navB .sens img{
-    display:block;
-    margin-left: 20px;
-    margin-bottom: 25px;
+.home .unavailable{
+    position: absolute;
+    left: 57px;
+    top: 108px;
+}
+
+.StartMission .homeRoad{
+    position: relative;
+    top: 400px;
+    right: 560px;
+    width: 100px;
+    height: 100px;
+}
+
+.StartMission h5{
+    position: absolute;
+    top: 620px;
+    left: 678px;
+    font-size: 18px;
+}
+
+.home .startMissionButton{
+    position: absolute;
+    top: 650px;
+    left: 643px;
+    width: 250px;
+}
+
+.yossi {
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.gps,
+.sensors,
+.wifi,
+.reception {
+  width: 30px;
+}
+
+.form .sens {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.form .sens img {
+  margin-right: 40px;
+}
+.topLine {
+  margin-top: 0px;
+}
+
+.homeLogos {
+  width: 25px;
+  height: 25px;
+  padding-bottom: 3px;
+}
+
+.form h1 {
+  position: absolute;
+  left: 292px;
+  top: 130px;
+  font-family: "Roboto" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+}
+.form h4 {
+  font-family: "Roboto" sans-serif;
+}
+
+.breadcrumbNav {
+  position: absolute;
+  left: 292px;
+  top: 100px;
+}
+
+.missionDetails {
+  position: absolute;
+  left: 292px;
+  top: 175px;
+}
+
+.form .googleMap iframe {
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  left: 1800px;
+  top: 246px;
+  border-radius: 31px;
+}
+
+.navB .sens img {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 25px;
 }
 
 .navB .breadcrumbNav {
-    position: absolute;
-    left: 100px;
-    top: 80px;
+  position: absolute;
+  left: 100px;
+  top: 80px;
 }
-.navB .navi{
-    position: absolute;
-    left: 100px;
-    top: 101px;
+.navB .navi {
+  position: absolute;
+  left: 100px;
+  top: 101px;
 }
 
-
-.navi iframe{
-    width: 1580px;
-    height: 100vh;
-    border-radius: 10px;
+.navi iframe {
+  width: 1580px;
+  height: 100vh;
+  border-radius: 10px;
 }
