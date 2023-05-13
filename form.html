@@ -16,18 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Amiko&family=Roboto:wght@300;500;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="style/style.css">
     <title>AfterYou-Home</title>
 </head>
-
 <body class="form">
     <div class="sidebar">
-        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px; height: 100vh;">
-            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-light sideBar">
+            <a href="home.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
-                <img src="/images/logo.png" class="ms-0">
+                <img src="images/logo.png" class="ms-0">
                 <span class="fs-4">After You</span>
             </a>
             <hr>
@@ -106,172 +105,170 @@
             </ul>
             <hr>
             <div class="sens">
-                <img class="gps" src="/images/locationGreen.png">
-                <img class="sensors" src="/images/sensorsBlack.png">
-                <img class="wifi" src="/images/wifiGreen.png">
-                <img class="reception" src="/images/receptionGreen.png">
+                <img class="gps" src="images/locationGreen.png">
+                <img class="sensors" src="images/sensorsBlack.png">
+                <img class="wifi" src="images/wifiGreen.png">
+                <img class="reception" src="images/receptionGreen.png">
             </div>
         </div>
     </div>
-    <div class=""></div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav flex-column">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">After You</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inventory</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-secondary me-3" type="submit">Search</button>
-                </form>
-                <div class="dropstart dropdown">
-                    <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
-                        id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="images/yossi.png" alt="" width="32" height="32" class="rounded-circle me-2">
-                        <strong>Yossi</strong>
-                    </a>
-                    <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                        <li><a class="dropdown-item" href="#">Settings</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
+
+    <div class="navBar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav flex-column ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">After You</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inventory</a>
                         </li>
-                        <li><a class="dropdown-item" href="index.html">Log out</a></li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary me-3" type="submit">Search</button>
+                    </form>
+                    <div class="dropstart dropdown">
+                        <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
+                            id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="images/yossi.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                            <strong>Yossi</strong>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="index.html">Log out</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-<main>
-    <main>
-        <nav class="breadcrumbNav"
+        </nav>
+    </div>
+    </div>
+<main id="wrapper">
+<nav class="breadcrumbNav"
             style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
             aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="home.html"><img src="images/HomeLogo.png" alt=""></a></li>
                 <li class="breadcrumb-item " aria-current="page">Home</li>
                 <li class="breadcrumb-item active" aria-current="page">Fill mission Details</li>
-
             </ol>
-        </nav>
-        <h1>Mission Details</h1>
-        <div class="missionDetails">
+</nav>
+
+<div class="missionDetails">
+<form action="nav.html" class="needs-validation">
+    <h1 class="titleH1">Mission Details</h1>
+
+        <div class="row g-3 mb-0">
             <h4>Emergency Contact Details</h4>
-            <form class="needs-validation my-1" novalidate="">
-                <div class="row g-3 mb-0">
-                    <div class="col-sm-4">
-                        <label for="firstName" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="firstName" placeholder="First name" value=""
-                            required="">
-                        <div class="invalid-feedback">
-                            Valid first name is required.
-                        </div>
-                    </div>
-    
-                    <div class="col-sm-4">
-                        <label for="lastName" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="lastName" placeholder="Last name" value="" required="">
-                        <div class="invalid-feedback">
-                            Valid last name is required.
-                        </div>
-                    </div>
-    
-                    <div class="col-8 mb-0">
-                        <label for="Phone Number" class="form-label">Phone Number</label>
-                        <div class="input-group has-validation">
-                            <span class="input-group-text">☏</span>
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="+01344455410"
-                                pattern="[+ 0-9] {9,10}">
-                            <div class="invalid-feedback">
-                                Your username is required.
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-8 mb-0">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="address" class="form-control" id="address" placeholder="Mission st. 5">
-                        <div class="invalid-feedback">
-                            Please enter a valid email address for shipping updates.
-                        </div>
-                    </div>
-                    <h4>Safe Spot Details</h4>
-                    <div class="col-md-3 mb-0">
-                        <label for="country" class="form-label">Country</label>
-                        <select class="form-select" id="country" required="">
-                            <option value="">Choose...</option>
-                            <option>United States</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid country.
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <label for="state" class="form-label">State</label>
-                        <select class="form-select" id="state" required="">
-                            <option value="">Choose...</option>
-                            <option>California</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please provide a valid state.
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="zip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="zip" placeholder="Zip" required="">
-                        <div class="invalid-feedback">
-                            Zip code required.
-                        </div>
-                    </div>
-    
-                    <div class="col-md-5 mb-1">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="address" class="form-control" id="address" placeholder="Mission st. 5">
-                        <div class="invalid-feedback">
-                            Please enter a valid email address for shipping updates.
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="Description" class="form-label">Description</label>
-                        <div class="input-group has-validation">
-                            <input type="text" class="form-control" id="phoneNumber"
-                                placeholder="Description (Hangar, Warehouse, Apartment, Etc.)" pattern="[+ 0-9] {9,10}">
-                            <div class="invalid-feedback">
-                                Your username is required.
-                            </div>
-                        </div>
+            <div class="col-sm-4">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="First name" name="firstName" value="" required="">
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Last name" name="lastName" value="" required="">
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+            <div class="col-8 mb-0">
+                <label for="Phone Number" class="form-label">Phone Number</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text">☏</span>
+                    <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="+01344455410"
+                        pattern="[+0-9]{9,10}">
+                    <div class="invalid-feedback">
+                        Your username is required.
                     </div>
                 </div>
-                <hr class="my-1">
-                <div class="col-8 mb-3 form-check">
-                    <input type="checkbox" class="form-check-input ms-2" id="same-address">
-                    <label class="form-check-label" for="same-address">Emergency address is the same as Safe Spot
-                        address</label>
+            </div>
+            <div class="col-8 mb-0">
+                <label for="address" class="form-label">Address</label>
+                <input type="address" class="form-control" id="address" name="address" placeholder="Mission st. 5">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
                 </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input ms-2" id="save-info">
-                    <label class="form-check-label" for="save-info">Save this information for next time</label>
+            </div>
+            <h4>Safe Spot Details</h4>
+            <div class="col-md-3 mb-0">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" id="country" name="country" required="">
+                    <option value="">Choose...</option>
+                    <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid country.
                 </div>
-                <hr class="my-1">
-                <div class="d-grid col-6 mb-3 my-3">
-                    <button class="btn btn-primary" type="button">Submit Details</button>
+            </div>
+            <div class="col-md-3">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select" id="state" name="state" required="">
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please provide a valid state.
                 </div>
-            </form>
+            </div>
+            <div class="col-md-2">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="zip" name="zip" placeholder="Zip" required="">
+                <div class="invalid-feedback">
+                    Zip code required.
+                </div>
+            </div>
+
+            <div class="col-md-5 mb-0">
+                <label for="address" class="form-label">Address</label>
+                <input type="address" class="form-control" id="address" name="safeSpotAddress" placeholder="Mission st. 5">
+                <div class="invalid-feedback">
+                    Please enter a valid email address for shipping updates.
+                </div>
+            </div>
+            <div class="col-md-3 mb-0">
+                <label for="Description" class="form-label">Description</label>
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control" id="Description" name="Description"
+                        placeholder="Description (Hangar, Warehouse, Apartment, Etc.)">
+                    <div class="invalid-feedback">
+                        Your username is required.
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="googleMap">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d864042.054191526!2d34.747009!3d32.226743!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1683219863483!5m2!1siw!2sil"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <hr class="my-1">
+        <div class="col-8 mb-3 form-check">
+            <input type="checkbox" class="form-check-input ms-2" id="same-address">
+            <label class="form-check-label" for="same-address">Emergency address is the same as Safe Spot
+                address</label>
         </div>
-    </main>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input ms-2" id="save-info">
+            <label class="form-check-label" for="save-info">Save this information for next time</label>
+        </div>
+        <hr class="my-1">
+        <div class="d-grid col-4 mb-3 my-5 mx-auto">
+            <button class="btn btn-primary rounded-pill"type="submit">Submit Details</button>
+        </div>
+    </form>
+            <div class="googleMap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d864042.054191526!2d34.747009!3d32.226743!3m2!1i1024!2i768!4f13.1!5e0!3m2!1siw!2sil!4v1683219863483!5m2!1siw!2sil"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+</div>
 </main>
 </body>
 

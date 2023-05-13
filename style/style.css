@@ -3,6 +3,8 @@
        padding: 0;
    }
 
+
+
    .login html,
    body {
        height: 100%;
@@ -58,9 +60,86 @@
    }
 
 
-   .sidebar {
+   .form body {
+       position: relative;
+       justify-content: center;
+       align-items: center;
+       width: 100vw;
+       height: 100vh;
+   }
+
+   .sideBar {
+       width: 280px;
+       position: relative;
+       height: 100vh;
        float: left;
-       background-color: #f8f9fa;
+   }
+
+   .navBar {
+       position: absolute;
+       margin-left: 280px;
+       width: calc(100% - 280px);
+   }
+
+   #wrapper {
+       position: relative;
+       top: 60px;
+       left: 300px;
+       width: calc(100vw - 300px);
+   }
+
+
+   .breadcrumbNav {
+       width: 500px;
+       margin-bottom: 10;
+       display: block;
+       position: relative;
+   }
+
+   .breadcrumb {
+       position: absolute;
+       left: 0;
+   }
+
+   .missionDetails {
+       position: relative;
+       width: calc(100vw - 300px);
+   }
+
+
+   .titleH1 {
+       position: relative;
+   }
+
+   .titleH1 h1 {
+       position: absolute;
+       margin: 0px;
+       height: 20px;
+       width: 300px;
+       top: 20px;
+   }
+
+   h4 {
+
+       width: 200px;
+       height: 30px;
+   }
+
+
+   .needs-validation {
+       position: absolute;
+       top: 20px;
+       width: calc(100vw - 700px);
+
+   }
+
+   .googleMap iframe {
+       position: absolute;
+       width: 350px;
+       height: 380px;
+       left: 60%;
+       top: 150px;
+       border-radius: 31px;
    }
 
    @media screen and (max-width: 992px) {
@@ -68,69 +147,54 @@
            display: none;
        }
 
-       .banners {
-           display: flex;
-           flex-wrap: nowrap;
-           flex-direction: column;
-           justify-content: center;
-       }
-
-       .CreateNewMission,
-       .FillMissionDetails,
-       .SystemSelfTest {
-
-           align-items: center;
-           margin-top: 50px;
-       }
-
-       .StartMission {
-           position: relative;
-           display: flex;
-           transform: translateX(-32%);
+       .navBar {
+           position: fixed;
+           margin-left: 0px;
            width: 100%;
-           height: 200px;
+           z-index: 1000;
+       }
 
-           align-items: center;
-           justify-content: center;
+       .googleMap iframe {
+           display: none;
        }
 
        .dropstart {
            display: none;
        }
 
-       .googleMap iframe {
-           display: none;
+       #wrapper {
+           left: 0px;
+           width: 100vw;
        }
-   }
 
-   /* /////////////////////////////////////// */
-   .banners {
-       display: flex;
-       flex-wrap: nowrap;
-       margin-top: 0%;
-   }
+       .needs-validation {
+           width: 100vw;
+       }
 
-   .CreateNewMission,
-   .FillMissionDetails,
-   .SystemSelfTest {
+       .CreateNewMission,
+       .FillMissionDetails,
+       .SystemSelfTest {
+           position: relative;
+           margin-left: 0 !important;
+           margin-top: 50px;
+           width: 400px;
+       }
 
-       align-items: center;
-       margin-left: 2%;
-   }
 
-   .StartMission {
-       position: relative;
-       margin-top: 10%;
-       margin-left: 35%;
-       width: 400px;
-       height: 200px;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-   }
+       .StartMission {
+           position: relative;
+           left: 0px !important;
+           width: 200px;
+           height: 200px;
+       }
 
-   .sidebar img {
-       width: 50px;
+       .navB .navBar {
+           position: fixed;
+           left: 0;
+           width: 100vw !important;
+           z-index: 1000;
+           margin-left: 0 !important;
+       }
    }
 
    .sens {
@@ -142,42 +206,114 @@
        margin-right: 40px;
    }
 
-   .title {
-       position: relative;
-   }
-
-   .googleMap iframe {
+   .banners {
        position: absolute;
+       float: left;
+   }
+
+   .CreateNewMission,
+   .FillMissionDetails,
+   .SystemSelfTest {
+       position: relative;
+       float: left;
+       margin-left: 50px;
+       top: 50px;
        width: 400px;
-       height: 400px;
-       left: 75%;
-       top: 25%;
-       border-radius: 31px;
+   }
+
+   .CreateNewMission img,
+   .FillMissionDetails img,
+   .SystemSelfTest img {
+       float: left;
+   }
+
+   .CreateNewMission h3,
+   .FillMissionDetails h3,
+   .SystemSelfTest h3 {
+       position: relative;
+       top: 8px;
+   }
+
+   .CreateNewMission h5,
+   .FillMissionDetails h5,
+   .SystemSelfTest h5 {
+       position: relative;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       top: 10px;
+   }
+
+   .CreateNewMission button,
+   .FillMissionDetails button,
+   .SystemSelfTest button {
+       position: relative;
+       left: 50px;
+       top: 10px;
+   }
+
+   .StartMission {
+       position: relative;
+       top: 200px;
+       left: 500px;
+       width: 400px;
+       height: 200px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .navB .sideBar {
+       width: 100px;
+       position: relative;
+       height: 100vh;
+       float: left;
+   }
+
+   .navB .sideBar .logo  {
+       position: absolute;
+       left: 30px;
+       width: 40px;
+       height: 40px;
+   }
+
+   .navB .navBar {
+       position: absolute;
+       margin-left: 100px;
+       width: calc(100% - 100px);
+   }
+
+   .navB .sens {
+       display: block;
+       margin-left: 20px;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .navB .sens img {
+       margin-bottom: 25px;
+       width: 30px;
    }
 
 
-.navB .sens{
-    display: block;
-    margin-left: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.navB .sens img{
-margin-bottom: 25px;
-width: 30px;
-}
 
 .navB .navi {
     position: relative;
-    display:flex;
-    width: 94% ;
+    left: 40px;
+    display: flex;
     justify-content: center;
 }
 
 .navi iframe {
-    position: relative;
-    width: 100%;
+    position: absolute;
+    width: calc(100vw - 101px);
     height: 92vh;
     border-radius: 10px;
+}
+
+.navB #wrapper {
+    position: relative;
+    top: 60px;
+    left: 0px;
+    width: calc(100vw - 101px);
 }
